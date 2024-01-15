@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Form - form is container with collection elements link ,button,textarea,checkbox,rediobutton ,list etc.
+
+    help to collect data i.e any type of data emp_data ,student data,finationl data . 
+
+    id-must be unique for a form  help in js to perform opration data and validation &manipulation 
+
+    name -help to access and perform operation or store data in database and use in js (javascrip)
+    
+    
+    value -it specifies the defaulyt value to display in text box 
+
+
+
+    placeholder -it define a watermark text foe input elements 
+
+
+    action -it specifies ther target where the data is submitted it refer to the server side page to submited form data
+    
+ method : get /post 
+  get- use to fetch the data for server 
+
+  -add url 
+  -only one can view data 
+  -its not safe 
+  -it is easy to hack data 
+
+  -its store in a browser log . 
+  -limitetaion  
+
+
+  post-
+
+post method is used to submit data in serve 
+-it is safe 
+-it is no hack data 
+
+-it is not store in browser history 
+-therin is no limit for submiting data 
+
+for-relation between specific attributes 
+the result of calculation of the elements
+
+
+requid-it will be not requid emplty 
+mendatry field 
+
+syntax :
+
+
+<form>
+-----
+
+
+</form> -->
+
+    <form action="" method="get/post">
+      <fieldset>
+        <legend>Personal Details:</legend>
+        <label for="Emp_Id">Emp_Id:</label>
+        <input type="text" name="Emp_Id" id="Emp_Id" value="#1234" readonly />
+        <br /><br />
+        <label for="Emp_name">Enter Full Name:</label>
+        <input type="text" name="Emp_Name" id="Emp_Name" placeholder="Enter full name" />
+
+        <br><br>
+
+        <!-- email -->
+
+        <label for="Emp_mail">Enter Email ID:</label>
+
+        <input type="email" name="Emp_mail" id="Emp_mail" placeholder="John@gmail.com" required/>
+
+        <br><br>
+
+        <label for="emp_pass">Enter Password:</label>
+        <input type="password"  name="Emp_pass" id="Emp_pass">
+        <br><br>
+
+         <!-- for gender -->
+
+         <label for="user_gender">Select gender:</label>
+         <input type="radio" name="user_gender" id="user_gender1" value="Male"/>Male
+         <input type="radio" name="user_gender" id="user_gender2" value="Female"/>Female
+         <input type="radio" name="user_gender" id="user_gender3" value="not to say"/>Pefer not to say
+<br><br>
+
+<!-- for multiple opetion -->
+
+        <label>Select Course:</label>
+        <input type="checkbox" name="u_course" id="u_course1" value="HTML"/>HTML
+        <input type="checkbox" name="u_course" id="u_course2" value="CSS"/>CSS
+        <input type="checkbox" name="u_course" id="u_course3" value="JS"/>JS
+        <input type="checkbox" name="u_course" id="u_course4" value="BOOTSTRAP"/>BOOTSTRAP
+        <input type="checkbox" name="u_course" id="u_course5" value="REACT"/>REACT
+
+<br><br>
+
+<!-- to select dropdown -->
+
+<label for="user_ed">Select your Education:</label>
+<select name="user_edu" id="user_edu">
+<option>Select</option>
+<option value="BCA">BCA</option>
+<option value="B.E">B.E</option>
+<option value="B.E">B.E</option>
+<option value="B.E">B.E</option>
+<option value="B.E">B.E</option>
+<option value="B.E">B.E</option>
+</select>
+
+<br><br>
+<!-- optional group <optgroup></optgroup> -->
+
+<label>Select Technology:</label>
+<select name="User_Tech" id="User_Tech">
+<optgroup  label="Front End Technology">
+
+    <option value=" ">Select</option>
+    <option value="HTML">HTML</option>
+    <option value="css">CSS</option>
+    <option value="css">JS</option>
+    <option value="css">BOOTSTRAP</option>
+    <option value="css">REACT JS</option>
+    <option value="css">ANGULER JS</option>
+
+
+</optgroup>
+<optgroup label="Back End Technology">
+
+    <option value="">Select</option>
+    <option value="PHP">PHP</option>
+    <option value="JAVA">JAVA</option>
+    <option value="PYTHON">PYTHON</option>
+    <option value=".NET">.NET</option>
+    <option value="MYSQL">MYSQL</option>
+
+
+</optgroup>
+
+
+</select>
+
+ </fieldset>
+
+
+ <fieldset>
+    <legend>Additional data:</legend>
+
+
+    <label for="user_doc"></label>
+    <input type="file" name="User_file"  id="User_file">
+    <br><br>
+
+    <label for="">Select color</label>
+    <input type="color" name="" id=""/>
+    <br><br>
+
+    <label for="DOB" >Date of birth: DOB:</label>
+    <input type="date" name="" id="DOB"/>
+
+    <br><br>
+    <label for=" ">Book you slot</label>
+    <input type="time" name="" id=""/> 
+<br><br>
+
+    <label for="">Hidden:</label>
+    <input type="hidden" name="" id=""/>
+<br><br>
+    <label for="">Select Range of your age:</label>
+    <input type="range" name="" id="" min="30" max="80"/>
+
+
+
+    <br><br>
+
+    <label for="">Search data</label>
+
+    <input type="search" name=" " id=" serachdata"/>
+
+
+    <br><br>
+
+    <label for="">Enter Adreess:</label>
+
+    <textarea name="" id="" style="height: 50px; width: 40%;"></textarea>
+     <br><br>
+
+    <label for="" >Enter Contact:</label>
+
+    <input type="tel" name="" id=""/>
+    <br><br>
+
+    <label for>Mobile no:</label>
+    <input type="number" name="" id=""/>
+
+<br><br>
+
+
+    <!-- submit form -->
+
+    <input  type="submit" name="" id="" value="save form"/>
+    <input type="reset" name="" id="" value="reset"/>
+<!-- or -->
+    <button type="submit" id="">Submit data</button>
+
+    <button type="reset" id="">Reset data</button>
+
+
+ </fieldset>
+    </form>
+  </body>
+</html>
+  

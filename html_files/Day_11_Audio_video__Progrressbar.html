@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- video tag - html video element <video></video>embed a media player into web page.
+    -help to load video file on web page 
+    -mp4 ,mp3 ,wmv ,mov , AVI 
+
+    WMV-Windows Media Video Image (WMV Image)
+     AVI-Audio Video Interleave file 
+     MOV-Metal-Oxide Varistor (MOV)
+
+      USED to show a video in our web page 
+
+      the control attributes add video controls like play ,pause ,and volume ,autoplay ,automuted
+      src- it is name of and loctaion of elemts -->
+
+    <video src="./images/Video.mp4" height="600px" width="100%" type="video/mp4" autoplay muted>
+
+
+    </video>
+
+    or 
+    <br><br>
+    <hr>
+
+    <video width="100px" height="100px" controls>
+        <source src="./images/Video.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+    <hr>
+
+
+    <!-- Audio file 
+
+      help to import audio file 
+      type -mp4 ,mp3 ,wav ,AIFF 
+      Audio Interchange File Format (AIFF) is an audio file format standard used for storing sound data for personal computers and other electronic audio devices. -->
+    <audio controls>
+        <source src="./images/Video.mp4">
+    </audio>
+
+    <!-- <audio  src="./images/Video.mp4" type="audio/mp4" controls autoplay></audio> -->
+
+
+
+    <br>
+    <br>
+
+
+    <!-- <audio controls autoplay>
+    <source src="./images/Video.mp4" type="audio/mp4">
+    <source src="horse.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio> -->
+
+
+    <!-- pdf file ---help to import pdf file  -->
+
+    <embed src="./Day_10_Icon.html" type="file" height="400px" width="400px">
+
+    <br><br>
+    <!-- progress bar -->
+
+    <progress></progress>
+
+
+
+    <p>React Js</p>
+
+    <progress max="100" value="10"></progress>
+
+
+    <progress max="100" value="40" style="height: 50px; width: 100%; background-color:yellow;"></progress>
+
+
+    <h3>React js</h3>
+
+    <progress max="100" value="90" style="height: 50px; width: 100%; background-color: aqua;"></progress>
+
+
+    <br><br>
+    <!-- effective way  -->
+
+
+    <div style="height: 40px; width: 50%; background-color: gray;">
+        <div style="height: 100%; width: 30%; background-color: orange; text-align: center; font-weight: bold;">Mern
+            Stack
+        </div>
+
+
+    </div>
+    <br><br>
+
+
+    <div style="height: 40px; width: 100%; background-color: gray; border-radius: 20px;">
+        <div
+            style="height: 100%; width: 30%; background-color: rgb(168, 10, 115); text-align: center; font-weight: bold; border-radius: 20px;">
+            Mern
+            Stack
+        </div>
+    </div>
+
+<br><br><br><br>
+    <!-- grapgics tag: -->
+
+    <!-- The cx and cy attributes define the x and y coordinates of the center of the circle. If cx and cy are omitted, the circle's center is set to (0,0)
+    The r attribute defines the radius of the circle -->
+
+    <svg height="100px" width="100px">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="5" fill="orange" />
+   </svg>
+
+
+    <br>
+
+</body>
+
+</html>

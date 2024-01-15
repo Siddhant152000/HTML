@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: orange;
+        }
+
+        .logo {
+            font-weight: bold;
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 15px 40px;
+            font-size: large;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul style="list-style-type: square;color: white;">
+            <label class="logo">Logo</label>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Join Us</a></li>
+            <button style="height: 20px; width: 70px; margin:15px;"><a href="#" style="text-decoration: none;">Sign
+                    in</a></button>
+
+        </ul>
+
+    </nav>
+
+    <marquee direction="right" behavior="slide" scrollamount="5" style="background-color: brown;">
+        <h3>Dragon Ball Z</h3>
+    </marquee>
+
+    <!-- <marquee direction="right" behavior="scroll" style="background-color: black; height: 200px; width: 100%;"> -->
+        <marquee direction="right" behavior="" id="img" style="background-color: purple;">
+            <img src="../Images/Goku-removebg-preview.png" height="150px"
+                width="150px" id="mum">
+            <img src="../Images/vegeta-removebg-preview.png" height="150px" width="150px">
+            <h2 style="color: white;">Dragon Ball Z</h2>
+        </marquee>
+    <!-- </marquee> -->
+  
+
+    <div style=" display: flex;">
+        <input type="button" value="start" onclick="document.getElementById('img').start();" style="padding: 10px; background-color: yellow;" />
+        <input type="button" value="stop"  onclick="document.getElementById('img').stop();" style="padding: 10px; background-color: yellow;" />
+    </div>
+   
+
+</body>
+
+</html>

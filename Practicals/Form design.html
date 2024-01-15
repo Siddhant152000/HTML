@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            margin: 0px 10px;
+        }
+        input{
+            margin: 10px;
+            height: 25px;
+            
+        }
+        select{
+            margin: 10px;
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(white, Blue);">
+    <fieldset style="width: 70%; margin: 50px 220px; background-color: white;">
+        <legend>Personal Information</legend>
+        <br>
+        <!-- -------------------------------Name---------------------------------------- -->
+
+        <label for="Name">Name :</label><br>
+        <input type="text" name="user_name" id="user_name" value="" placeholder="First Name">
+        <input type="text" name="user_name" id="user_name" value="" placeholder="Middle Name">
+        <input type="text" name="user_name" id="user_name" value="" placeholder="Last Name">
+        <br><br>
+        <!-- -------------------------------Gender---------------------------------------- -->
+
+        <label for="Gender"> Gender :</label>
+        
+        <input type="radio" name="user_gen" id="user_gen" style=" height: 10px;">Male
+        <input type="radio" name="user_gen" id="user_gen" style=" height: 10px;">Female
+        <input type="radio" name="user_gen" id="user_gen" style=" height: 10px;">Other
+        <br><br>
+        <!-- -------------------------------Birth date---------------------------------------- -->
+
+        <label for="Birth">Birth Date :</label>
+        <br>
+        <input type="date" name="user_dob" value="">
+       
+        <!-- -------------------------------Address---------------------------------------- -->
+
+        <br><br>
+        <label for="Address">Address :</label>
+        <br>
+        <input type="text" name="user_add" id="user_add" value="" placeholder="street Address" style="width: 50%;">
+        <br>
+        <input type="text" name="user_add" id="user_add" value="" placeholder="street Address Line 2" style="width: 50%;">
+        <br>
+        <input type="text" name="user_add" id="user_add" value="" placeholder="City" style="width: 15%;">
+        <input type="text" name="user_add" id="user_add" value="" placeholder="State" style="width: 15%;">
+        <input type="text" name="user_add" id="user_add" value="" placeholder="Post Code" style="width: 15%;">
+        <br><br>
+        
+        <!-- -------------------------------Email---------------------------------------- -->
+
+        <label for="user_mail">E-Mail :</label>
+        <br>
+        <input type="text/no" name="user_mail" id="user_mail" value="" placeholder="ex: myname@gmail.com" style="width: 30%;">
+        <br><br>
+
+        <!-- -------------------------------Contact---------------------------------------- -->
+
+        <label for="user_mobile">Contact Number :</label>
+        <br>
+        <select name="" id="">
+            <option value="1">+91 IND</option>
+            <option value="2">+1  USA</option>
+            <option value="3">+44 UK</option>
+            <option value="4">+64 NZ</option>
+            <option value="5">+61 AUS</option>
+            <option value="6">+93 AFG </option>
+        </select>
+        <input type="tel" name="user_mobile" id="user_mobile" value="">
+        <br><br>
+
+        <!-- -------------------------------Select Branch---------------------------------------- -->
+
+        <label for="Course">Select Branch :</label>
+        <br>
+        <input type="checkbox" name="user_course" id="user_course" value="" style="height: 10px;">B.E Electrical <br>
+        <input type="checkbox" name="user_course" id="user_course" value="" style="height: 10px;">B.E Electronics <br>
+        <input type="checkbox" name="user_course" id="user_course" value="" style="height: 10px;">B.E Mechanical <br>
+        <br><br>
+        <!-- -------------------------------Photo---------------------------------------- -->
+
+        <label for="user_photo">Attached Photo :</label><br>
+        <input type="file" name="user_file" id="user_file">
+        <br><br>
+
+        <!-- -------------------------------select Range---------------------------------------- -->
+
+        <label for="">Give Ratings :</label>1
+        <input type="range" name="" id="" value=""  style="height: 10px;">10
+
+        <br><br>
+        <!-- -------------------------------select Time Slot---------------------------------------- -->
+
+        <label for="time slot">Select Suitable  Date & Time :</label>
+        <br>
+        <input type="date" name="" id="" value="">
+        <input type="time" name="" id="" value="">
+        <br><br>
+        <!-- -------------------------------Submit Button---------------------------------------- -->
+
+        <!-- <label for="submit form">Submit</label> -->
+        <input type="submit" name="submit_form" id="submit_form" value="Submit" style="margin-left: 480px;">
+    </fieldset>
+</body>
+</html>

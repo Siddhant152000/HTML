@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box1{
+            background-color: chocolate;
+            height: 50px;
+            width: 16.66%;
+            float: left;
+        }
+        .box2{
+            background-color: purple;
+            height: 50px;
+            width: 16.66%;
+            float: left;
+        }
+
+    </style>
+
+    <style>
+
+        /* nested div */
+        .box-1{
+            background-color: black;
+            border: 2px solid red;
+            padding: 55px;
+
+        }
+        .box-2{
+            background-color: cadetblue;
+        padding: 50px;
+
+        }
+        .box-3{
+            background-color: chocolate;
+            padding: 45px;
+        }
+        .box-4{
+            background-color: pink;
+            padding: 40px;
+        }
+        .box-5{
+            background-color: rgb(205, 15, 47);
+            padding: 35px;
+        }
+        .box-6{
+            background-color: rgb(48, 15, 158);
+            padding: 30px;
+        }
+        .box-7{
+            background-color: rgb(208, 222, 19);
+            padding: 25px;
+        }
+        .box-8{
+            background-color: rgb(13, 20, 198);
+            padding: 20px;
+        }   .box-9{
+            background-color: rgb(102, 5, 52);
+            padding: 15px;
+        }   .box-10{
+            background-color: rgb(47, 237, 244);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div tag
+    - everything in a html is box
+    - it can be block level or inline level
+    -basically used to build layout structure of our web page 
+    -basically act as contaimner for html elements  -->
+
+    <div style="height: 50px; width: 100%; background-color: rgb(172, 143, 14);" ></div>
+<!-- 2 partitioning -->
+<div style="background-color: rgb(76, 10, 184); height: 50px; width: 50%; float: left;"></div>
+<div style="background-color: rgb(124, 9, 76); height: 50px; width: 50%; float: left;"></div>
+ <!-- 3 partitioning -->
+ <div style="background-color: cadetblue; height: 50px; width: 33.33%;  float: left;"></div>
+ <div style="background-color: rgb(221, 12, 183); height: 50px; width: 33.33%; float: left; "></div>
+ <div style="background-color: rgb(14, 157, 41); height: 50px; width: 33.33%; float: left;"></div>
+ <!-- 4 partitioning -->
+ <div style="background-color: red; width: 25%; height: 50px; float: left;"></div>
+ <div style="background-color: rgb(16, 132, 194); width: 25%; height: 50px; float: left;"></div>
+ <div style="background-color: rgb(48, 98, 7); width: 25%; height: 50px; float: left;"></div>
+ <div style="background-color: rgb(193, 14, 154); width: 25%; height: 50px; float: left;"></div>
+
+ <!-- 6 partitioning -->
+ <div class="box1"></div>
+ <div class="box2"></div>
+ <div class="box1"></div>
+ <div class="box2"></div>
+ <div class="box1"></div>
+ <div class="box2"></div>
+<br><br><br><br><br><br><br><br>
+<hr>
+<br><br><br><br><br><br><br><br>
+
+<!-- nested div structure -->
+<div class="box-1">
+    <div class="box-2">
+        <div class="box-3">
+            <div class="box-4">
+                <div class="box-5">
+                    <div class="box-6">
+                        <div class="box-7">
+                            <div class="box-8">
+                                <div class="box-9">
+                                    <div class="box-10">
+                                        <h1 style="text-align: center;">Box</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

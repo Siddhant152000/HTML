@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(80, 76, 76);
+            height: 100px;
+            width: 100%;
+        }
+
+        aside {
+            background-color: rgb(87, 93, 97);
+            height: 500px;
+            width: 20%;
+        }
+
+        article {
+            background-color: rgb(206, 215, 223);
+            height: 500px;
+            width: 80%;
+        }
+
+        main {
+            display: flex;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        footer {
+            background-color: rgb(80, 76, 76);
+            height: 100px;
+            width: 100%;
+        }
+
+        aside ul li {
+            margin: 70px;
+
+        }
+
+       aside a {
+            font-size: larger;
+            border: 2px solid black;
+            padding: 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            background-color: pink;
+            
+
+        }
+      header ul li {
+        float: left;
+        margin:  25px 50px;
+        padding: 10px;
+        list-style-type: none;
+        
+      }
+      header ul a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        font-size:larger;
+        border: 1px solid rgb(250, 247, 247);
+        padding: 10px;
+        background-color: rgb(231, 35, 97);
+        
+        
+      }
+footer ul{
+    margin-left: 1200px;
+}
+      footer ul li{
+
+        float: left;
+        margin:  25px 0px;
+        list-style-type: none;
+        text-align-last: right;
+      }
+      footer ul a{
+        
+       
+        padding: 10px;
+        background-color: rgb(186, 186, 239);
+        text-decoration: none;
+        
+        
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <ul>
+            <li style="font-weight: bold; color: white;"><h3>Daily News :</h3></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Polices</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">visit</a></li>
+            <li style="font-weight: bold; color: white; margin-left: 300px;">Select Languages</li>
+        </ul>    
+    </header>
+
+    <main>
+        <aside>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Join us</a></li>
+            </ul>
+
+        </aside>
+        <article>
+           
+
+            <div style="display: flex;">
+
+                <figure>
+                    <img src="../images/G20-Summit.jpg" height="300px" width="300px" style="margin: 50px;">
+                    <figcaption>
+                        <h3 style=" margin: 0px 170px;"><a href="https://www.mofa.go.jp/ecm/ec/page1e_000768.html">
+                                Delhi G20</a></h3>
+                    </figcaption>
+                </figure>
+
+
+                <figure>
+                    <img src="../images/Bangalore.jpg" height="300px" width="300px" style="margin: 50px;">
+                    <figcaption>
+                        <h3 style=" margin: 0px 100px;"><a href="https://en.wikipedia.org/wiki/Vidhana_Soudha">Bangalore
+                                vidhan sabha</a></h3>
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../images/Mumbai.jpg" height="300px" width="300px" style="margin: 50px;">
+                    <figcaption>
+                        <h3 style=" margin: 0px 120px;"> <a
+                                href="https://www.google.com/search?q=mumbai+taj+hotel&oq=mumbai+taj+hotel&aqs=chrome..69i57j0i22i30l9.6543j0j4&sourceid=chrome&ie=UTF-8#ip=1">Mumbai Taj Hotel</a>
+                            </h3>
+                    </figcaption>
+                </figure>
+            </div>
+
+
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">Skip content|</a></li>
+            <li><a href="">FAQ|</a></li>
+            <li><a href="">Site map|</a></li>
+            <li><a href="">Links</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
